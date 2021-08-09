@@ -1,0 +1,10 @@
+<h1>Result</h1>
+<%if @included%>
+  <%if @english_word %>
+   Congratulations! <%= @word.upcase %> is a valid English word!
+  <% else %>
+    Sorry but <%= @word %> does not seem to ba a valid English word...
+  <% end %>
+<% else %>
+  Sorry but <%= @word %> can't be build out of <%= @grid %>
+<% end %>
